@@ -1,0 +1,236 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+}
+
+/*ESTILIZAÇÃO*/
+body{
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+header div{
+    display: flex;
+    justify-content: space-evenly;
+    height: 96px;
+    width: 100%;
+    align-items: center;
+}
+
+.header-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-menu li{
+    margin-right: 60px;
+    font-family: 'Sarala', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFF2E7;
+    cursor: pointer;
+}
+
+.header--menuoculto{
+    display: none;
+}
+
+main{
+    border-top: 0.4px solid #fff2e770;
+    border-bottom: 0.4px solid #fff2e770;
+    text-align: center;
+    padding-bottom: 83px;
+    padding-top: 94px;
+}
+
+.main-introducao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.main--titulo h1{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 79px;
+    color: #FFF2E7;
+    width: 308px;
+    height: 80px;
+    margin-bottom: 32px;
+}
+
+.main--titulo h2{
+    font-family: 'Sarala', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 39px;
+    color: #ECD6C4;
+    width: 545px;
+    height: 46px;
+    margin-bottom: 34px;
+}
+
+.main--titulo button{
+    width: 185px;
+    height: 67px;
+    border: none;
+    background-color: #ECD6C4;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    color: #2F2325;
+}
+
+.main--titulo button:hover{
+    cursor: pointer;
+}
+
+.main-descricao h3{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFF2E7;
+    border-top: 0.4px solid #fff2e770;
+    width: 271px;
+    margin: auto;
+    padding-top: 74px;
+}
+
+.main-descricao ol{
+    text-align: center;
+    list-style-position: inside; 
+}
+
+.main-descricao li{
+    font-family: 'Sarala', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    
+    color: #ECD6C4;
+    margin-top: 31px;
+    
+}
+
+footer{
+    margin-top: 45px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+@media screen and (max-width: 960px) {
+    
+    header div{
+        justify-content: space-around;
+    }
+    .header-menu li{
+        margin-right: 40px;
+    }
+
+    .main-introducao img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    main{
+        padding-top: 20px;
+    }
+
+    .main-introducao{
+        flex-direction: column-reverse;
+    }
+
+    .main-introducao img{
+        width: 395px;
+        margin-bottom: 30px;
+    }
+
+    .main--titulo{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .main--titulo h1{
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .header-menu ul{
+        display: none;
+    }
+
+    .header--menuoculto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header--menuoculto hr{
+        width: 30px;
+        margin: 3px;
+        border: 1px solid rgb(48,35,38);
+        cursor: pointer;
+    }
+}
