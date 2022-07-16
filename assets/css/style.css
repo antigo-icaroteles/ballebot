@@ -115,7 +115,6 @@ main{
     font-size: 24px;
     line-height: 39px;
     color: #ECD6C4;
-    width: 545px;
     height: 46px;
     margin-bottom: 34px;
 }
@@ -138,6 +137,12 @@ main{
 
 .main--titulo button:hover{
     cursor: pointer;
+}
+
+.main--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-descricao h3{
@@ -174,7 +179,14 @@ main{
 footer{
     margin-top: 45px;
     text-align: center;
-    padding-bottom: 45px;
+    padding: 0px 10px 48px 10px;
+}
+
+footer img {
+   width: 100%;
+   max-width: 460px;
+   height: 100%;
+   object-fit: contain;	
 }
 
 @media screen and (max-width: 960px) {
@@ -201,7 +213,6 @@ footer{
     }
 
     .main-introducao img{
-        width: 395px;
         margin-bottom: 30px;
     }
 
